@@ -6,6 +6,8 @@ jobs:
     first:
         runs-on: ubuntu-latest
         steps: 
+        - name: Repo action
+          uses: actions/checkout@v4
         - name: testing first time
           run: echo "first github actions step". #echo used based on runs-on OS
           
